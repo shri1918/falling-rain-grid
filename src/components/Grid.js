@@ -3,9 +3,10 @@ import "../App.css";
 
 const DROP_LENGTH = 5; // Length of each drop
 
-// Generate shades of color for the drop
-const generateColorShades = (baseColor, length) => {
-  return Array.from({ length }, (_, i) => `hsl(${baseColor}, 100%, ${70 - i * 10}%)`);
+const predefinedColors = ['#bca6ff','#9c73ff','#803bff','#7414ff','#5601d6'    ];
+
+const generateColorShades = () => {
+  return predefinedColors;
 };
 
 const Grid = ({ rows, cols }) => {
